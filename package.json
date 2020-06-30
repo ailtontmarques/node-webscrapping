@@ -1,0 +1,28 @@
+{
+  "name": "webscrapping",
+  "version": "1.0.0",
+  "description": "Webscrapping com Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ailtontmarques/node-webscrapping.git"
+  },
+  "keywords": [
+    "webscrapping",
+    "crawler"
+  ],
+  "author": "Ailton Marques",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ailtontmarques/node-webscrapping/issues"
+  },
+  "homepage": "https://github.com/ailtontmarques/node-webscrapping#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
