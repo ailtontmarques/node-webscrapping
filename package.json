@@ -2,9 +2,10 @@
   "name": "webscrapping",
   "version": "1.0.0",
   "description": "Webscrapping com Node.js",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
-    "test": "test.js"
+    "test": "test.js",
+    "start": "npx babel-node src"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,14 @@
   "homepage": "https://github.com/ailtontmarques/node-webscrapping#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20",
     "request": "^2.88.2",
     "request-promise": "^4.2.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
   }
 }

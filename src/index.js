@@ -1,3 +1,6 @@
+import database from './config/database'
+import ImagesModel from './models/images'
+
 const rp = require('request-promise')
 const cheerio = require('cheerio')
 
@@ -10,6 +13,17 @@ const options = {
 
 function processarDados(dados){
     //salva no banco de dados
+    database.connect().then(() => {
+        app.listen(port, () => console.log('Api rodando na porta 3000.'))
+    })
+
+    try {
+        const imagesModel = new ImagesModel(dados)
+        imagesModel.save()
+
+    } catch (error){
+        console.log('Error:' + error)
+    }
     console.log(JSON.stringify(dados))
   }
 
