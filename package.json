@@ -2,7 +2,6 @@
   "name": "webscrapping",
   "version": "1.0.0",
   "description": "Webscrapping com Node.js",
-  "main": "script.js",
   "scripts": {
     "test": "test.js",
     "start": "npx babel-node src"
